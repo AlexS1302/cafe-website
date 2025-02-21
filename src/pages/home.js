@@ -1,6 +1,6 @@
 import backgroundImageSrc from '../images/background-image.jpg'
 
-// Home Tab content
+// Home tab content
 export function home() {
     const contentContainer = document.getElementById("content");
 
