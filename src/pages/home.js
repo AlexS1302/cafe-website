@@ -1,11 +1,11 @@
-import backgroundImageSrc from '../images/background-image.jpg'
+import backgroundImageSrc from '../images/home-bg.jpg'
 
 // Home tab content
 export function home() {
     const contentContainer = document.getElementById("content");
 
-    const mainSection = document.createElement("div");
-    mainSection.setAttribute("id", "main");
+    const main = document.createElement("section");
+    main.setAttribute("id", "home");
     
     const backgroundImage = document.createElement("img");
     backgroundImage.src = backgroundImageSrc;
@@ -19,11 +19,11 @@ export function home() {
     const button = document.createElement("button");
     button.setAttribute("id", "find-out-btn");
     button.textContent = "Find out more";
-    
-    contentContainer.appendChild(mainSection);
-    mainSection.appendChild(backgroundImage);
-    mainSection.appendChild(title);
-    mainSection.appendChild(description);
-    mainSection.appendChild(button);
+
+    contentContainer.appendChild(main);
+    main.appendChild(backgroundImage);
+    main.appendChild(title);
+    main.appendChild(description);
+    main.appendChild(button);
 }
 
