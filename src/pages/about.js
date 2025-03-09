@@ -6,26 +6,21 @@ export function about(){
 
     const main = document.createElement("section");
     main.setAttribute("id", "about");
-    contentContainer.appendChild(main);
 
     const backgroundImage = document.createElement("img");
     backgroundImage.src = backgroundImageSrc;
-    backgroundImage.alt = "Cake image"
-    main.appendChild(backgroundImage);
+    backgroundImage.alt = "Tea pot background image"
 
     const articleContainer = document.createElement("div");
     articleContainer.setAttribute("id", "article-container");
     articleContainer.classList.add("article-border");
-    main.appendChild(articleContainer);
 
     const article = document.createElement("article");
-    articleContainer.appendChild(article);
 
-    // Text
+    // Article text
     const h1 = document.createElement("h1");
     h1.textContent = "Where Every Sip Feels Like Home";
     h1.setAttribute("id", "about-header");
-    article.appendChild(h1);
 
     const p = document.createElement("p");
     p.setAttribute("id", "about-paragraph");
@@ -36,6 +31,10 @@ export function about(){
     p.textContent += "From the first sip of your morning coffee to the last bite of an afternoon treat, we're here to make every moment special.\n\n"
     p.textContent += "Join us in celebrating the simple joys of life, one cup at a time."
     
+    contentContainer.appendChild(main);
+    main.appendChild(backgroundImage);
+    main.appendChild(articleContainer);
+    articleContainer.appendChild(article);
+    article.appendChild(h1);
     article.appendChild(p);
-
 }

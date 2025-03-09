@@ -24,4 +24,4 @@ aboutBtn.addEventListener("click", () => {
     about();
 });
 
-about();
+menu();
