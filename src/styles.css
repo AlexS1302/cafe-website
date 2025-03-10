@@ -127,7 +127,7 @@ nav button:hover {
     height: 650px;
 }
 
-article, #menu-list {
+article {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,7 +156,11 @@ article, #menu-list {
     margin-top: 80px;
     width: 700px;
     height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 .menu-border {
     border: 80px solid transparent;
@@ -167,11 +171,18 @@ article, #menu-list {
     border-image-repeat: round;
 }
 
-#menu-list {
+/* #menu-list {
     margin: 0;
+} */
+
+#menu-container h1 {
+    background: linear-gradient(to right, green , rgb(112, 194, 112)); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-#menu-list > * {
+#menu-container > * {
     margin: 5px 0;
 }
 
