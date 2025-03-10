@@ -1,3 +1,4 @@
+import { createMenuButton } from '../components/menuButton';
 import backgroundImageSrc from '../images/home-bg.jpg'
 
 // Home tab content
@@ -16,14 +17,13 @@ export function home() {
     title.textContent = "Tea Time Bliss";
     const description = document.createElement("p");
     description.textContent = "Your daily dose of tranquility";
-    const button = document.createElement("button");
-    button.setAttribute("id", "find-out-btn");
-    button.textContent = "Find out more";
+
+    const menuButton = createMenuButton();
 
     contentContainer.appendChild(main);
     main.appendChild(backgroundImage);
     main.appendChild(title);
     main.appendChild(description);
-    main.appendChild(button);
+    main.appendChild(menuButton);
 }
 
