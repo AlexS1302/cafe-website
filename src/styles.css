@@ -142,6 +142,13 @@ article {
     border-image-repeat: round;
 }
 
+#about-header {
+    background: linear-gradient(to right, #f1912b, #e8b843); 
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 #about-paragraph {
     white-space: pre-line;
     padding-left: 10px;
@@ -163,7 +170,9 @@ article {
 
 
 .menu-border {
-    border: 80px solid transparent;
+    border-width: 80px 0;
+    border-style: solid;
+    border-color: transparent;
     border-image: url(images/menu-border.png);
     border-image-slice: 600;
     border-image-width: 80px;
@@ -171,12 +180,8 @@ article {
     border-image-repeat: round;
 }
 
-/* #menu-list {
-    margin: 0;
-} */
-
 #menu-container h1 {
-    background: linear-gradient(to right, green , rgb(112, 194, 112)); 
+    background: linear-gradient(to right, green , #70c270); 
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,6 +189,11 @@ article {
 
 #menu-container > * {
     margin: 5px 0;
+}
+
+#menu-list {
+    padding: 0;
+    list-style-type: none;
 }
 
 /* Footer */

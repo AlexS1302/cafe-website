@@ -6,5 +6,9 @@ export const menuItems = [
     {
         name: "Jasmine Silver Needle",
         description: "A premium white tea with a floral, fragrant aroma."
+    },
+    {
+        name: "Lavender Earl Grey",
+        description: "A twist on the classic, blended with a hint of lavender."
     }
 ];

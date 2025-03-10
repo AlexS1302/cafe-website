@@ -29,13 +29,4 @@ export function menu(){
     menuContainer.appendChild(menuList);
 
     displayMenu(menuItems);
-    // Menu items
-    // const greenTea = document.createElement("h3");
-    // greenTea.textContent = "Cherry Blossom Green Tea";
-    // menuList.appendChild(greenTea);
-
-    // const greenTeaDesc = document.createElement("p");
-    // greenTeaDesc.textContent = "Delicate green tea infused with cherry blossom essence, perfect for spring."
-    // menuList.appendChild(greenTeaDesc);
-    
 }
