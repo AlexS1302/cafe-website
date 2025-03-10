@@ -19,11 +19,11 @@ export function home() {
     description.textContent = "Your daily dose of tranquility";
 
     const menuButton = createMenuButton();
-
-    contentContainer.appendChild(main);
+    
     main.appendChild(backgroundImage);
     main.appendChild(title);
     main.appendChild(description);
     main.appendChild(menuButton);
+    contentContainer.appendChild(main);
 }
 

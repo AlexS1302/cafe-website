@@ -8,7 +8,6 @@ export function menu(){
 
     const main = document.createElement("section");
     main.setAttribute("id", "menu");
-    contentContainer.appendChild(main);
 
     const backgroundImage = document.createElement("img");
     backgroundImage.src = backgroundImageSrc;
@@ -18,7 +17,6 @@ export function menu(){
     const menuContainer = document.createElement("div");
     menuContainer.setAttribute("id", "menu-container");
     menuContainer.classList.add("menu-border")
-    main.appendChild(menuContainer);
     
     //Teas
     const teaHeader = document.createElement("h1");
@@ -43,4 +41,7 @@ export function menu(){
     menuContainer.appendChild(dessertList);
 
     displayMenu(desserts, dessertList);
+
+    main.appendChild(menuContainer);
+    contentContainer.appendChild(main);
 }

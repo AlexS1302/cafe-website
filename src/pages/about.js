@@ -31,10 +31,10 @@ export function about(){
     p.textContent += "From the first sip of your morning coffee to the last bite of an afternoon treat, we're here to make every moment special.\n\n"
     p.textContent += "Join us in celebrating the simple joys of life, one cup at a time."
     
-    contentContainer.appendChild(main);
-    main.appendChild(backgroundImage);
-    main.appendChild(articleContainer);
-    articleContainer.appendChild(article);
     article.appendChild(h1);
     article.appendChild(p);
+    articleContainer.appendChild(article);
+    main.appendChild(articleContainer);
+    main.appendChild(backgroundImage);
+    contentContainer.appendChild(main);
 }
