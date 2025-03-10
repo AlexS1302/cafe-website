@@ -1,6 +1,4 @@
-export function displayMenu(menuItems) {
-    const menuList = document.getElementById("menu-list");
-
+export function displayMenu(menuItems, menuList) {
     menuItems.forEach(item => {
         const menuItemContainer = document.createElement("li");
         menuItemContainer.classList.add("menu-item");

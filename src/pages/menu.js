@@ -1,5 +1,6 @@
 import backgroundImageSrc from '../images/menu-bg.jpg'
-import { menuItems } from '../components/menuData.js';
+import { teas } from '../components/menuData.js';
+import { desserts } from '../components/menuData.js';
 import { displayMenu } from '../components/displayMenu.js';
 
 export function menu(){
@@ -19,14 +20,27 @@ export function menu(){
     menuContainer.classList.add("menu-border")
     main.appendChild(menuContainer);
     
+    //Teas
     const teaHeader = document.createElement("h1");
     teaHeader.setAttribute("id", "tea-header");
     teaHeader.textContent = "Seasonal Teas";
     menuContainer.appendChild(teaHeader);
     
-    const menuList = document.createElement("ul");
-    menuList.setAttribute("id", "menu-list");
-    menuContainer.appendChild(menuList);
+    const teaList = document.createElement("ul");
+    teaList.setAttribute("id", "tea-list");
+    menuContainer.appendChild(teaList);
 
-    displayMenu(menuItems);
+    displayMenu(teas, teaList);
+
+    //Cakes
+    const dessertHeader = document.createElement("h1");
+    dessertHeader.setAttribute("id", "dessert-header");
+    dessertHeader.textContent = "Seasonal Desserts";
+    menuContainer.appendChild(dessertHeader);
+
+    const dessertList = document.createElement("ul");
+    dessertList.setAttribute("id", "dessert-list");
+    menuContainer.appendChild(dessertList);
+
+    displayMenu(desserts, dessertList);
 }
