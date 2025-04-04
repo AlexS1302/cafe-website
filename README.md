@@ -19,7 +19,7 @@ The focus of this project is to become familiar with Webpack and writing modular
 * Webpack
 
 ## Project Link
-You can view this project [here](https://alexs1302.github.io/restaurant-page/)!
+You can view this project [here](https://alexs1302.github.io/cafe-website/)!
 
 ## Credits
 This Project was created as part of The Odin Project's curriculum, a free online resource for learning web development.
